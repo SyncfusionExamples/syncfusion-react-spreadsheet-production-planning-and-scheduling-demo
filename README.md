@@ -18,7 +18,7 @@ This repository contains a complete showcase sample demonstrating how to build a
 
 - Plan and schedule production orders with start and end date tracking.
 - Calculate delivery feasibility using built‑in spreadsheet formulas.
-- Track material shortages with fields like Available Quantity, Customer Required, and Shortage and Restock Quantity availability date.
+- Track material shortages with fields like Available Quantity, Customer Required Quantity, Shortage and Restock Quantity availability date.
 - Use conditional formatting to highlight delays, risks, and shortage conditions.
 - Apply data validation for  quantities and selectable fields.
 - Utilize spreadsheet interactivity: Data editing, cell and conditional formatting ,applying formulas to analyze data in the spreadsheet and more.

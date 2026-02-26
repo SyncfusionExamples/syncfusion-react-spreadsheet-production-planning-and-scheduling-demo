@@ -75,7 +75,6 @@ const onCreated = () => {
   //adding data validations
   spreadsheet.addDataValidation({ type: 'List', value1: 'High,Medium,Low' }, `Demand!F2:F${demandLastRow}`);
   spreadsheet.conditionalFormat({ type: 'EqualTo', value: 'Delayed', range: `Demand!G2:G${demandLastRow}`, format: { backgroundColor: 'red', color: '#721C24' } });
-  // spreadsheet.conditionalFormat({ type: 'EqualTo', value: 'In Progress', range: `Demand!G2:G${demandLastRow}`, format: { color: 'blue'} });
   spreadsheet.conditionalFormat({ type: "BWRColorScale", range: `Demand!E2:E${demandLastRow}` });
   spreadsheet.conditionalFormat({ type: 'EqualTo', cFColor: 'RedF', value: 'High', range: `Demand!F2:F${demandLastRow}` });
   spreadsheet.conditionalFormat({ type: 'EqualTo', cFColor: 'YellowFT', value: 'Medium', range: `Demand!F2:F${demandLastRow}` });
@@ -91,9 +90,9 @@ const onCreated = () => {
   spreadsheet.merge('Dashboard!A10:B10', 'Horizontally');
   spreadsheet.refresh();
 };
-  const ColumnChart = [{ type: 'Column', range: `Demand!C1:D21`, title: 'CUSTOMER ORDERED ITEMS', theme: 'Tailwind3', height: 290, width: 450, top:0, id: 'Chart2', isSeriesInRows: false }];
-  const PieChart = [{ type: 'Pie', range: 'DashBoard!A11:B13', title: 'ORDER PRIORITIES', theme: 'Tailwind3', height: 290, width: 440, top:0, id: 'Chart1', isSeriesInRows: false }];
-  const BarChart = [{ type: 'Bar', range: 'Material!A1:C21', title: 'AVAILABLE AND CUSTOMER ORDERED QUANTITIES', theme: 'Tailwind3', height: 300, width: 900, top:300,left: 370, id: 'Chart3', isSeriesInRows: false }];
+  const ColumnChart = [{ type: 'Column', range: `Demand!C1:D21`, title: 'CUSTOMER ORDERED ITEMS', theme: 'Tailwind3', height: 290, width: 450, top: 0, id: 'Chart2', isSeriesInRows: false }];
+  const PieChart = [{ type: 'Pie', range: 'DashBoard!A11:B13', title: 'ORDER PRIORITIES', theme: 'Tailwind3', height: 290, width: 440, top: 0, id: 'Chart1', isSeriesInRows: false }];
+  const BarChart = [{ type: 'Bar', range: 'Material!A1:C21', title: 'AVAILABLE AND CUSTOMER ORDERED QUANTITIES', theme: 'Tailwind3', height: 300, width: 900, top: 300, left: 370, id: 'Chart3', isSeriesInRows: false }];
   return ( 
     <SpreadsheetComponent ref={(ssObj) => { spreadsheet = ssObj; }} created={onCreated.bind(this)} height={650}  showFormulaBar={false} isProtected={true}  showRibbon={false}>
       <SheetsDirective>
