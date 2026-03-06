@@ -40,7 +40,7 @@ export default function App() {
       }
     });
     //if role is supervisor, also unprotect material sheet
-    if (userRole == 'Supervisor') {
+    if (userRole == 'Planner') {
       spreadsheet.unprotectSheet(2);
     }
     else {
