@@ -1,71 +1,45 @@
-export const liveDemand =
-  [
-  { "OrderID": "SO-1001", "Customer Group": "Acme Manufacturing", "Item": "Stainless Steel Bolt M6 x 20mm", "Quantity": 120, "Delivery Deadline": "2026-02-10", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1002", "Customer Group": "Globex Corp", "Item": "Aluminum Sheet 2mm 4x8", "Quantity": 80, "Delivery Deadline": "2026-02-11", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1003", "Customer Group": "Innotech", "Item": "Copper Wire 1.5mm Spool", "Quantity": 200, "Delivery Deadline": "2026-02-12", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1004", "Customer Group": "Umbrella Ltd", "Item": "ABS Plastic Granules (Natural)", "Quantity": 50, "Delivery Deadline": "2026-02-13", "Priority": "Low", "Status": "" },
-  { "OrderID": "SO-1005", "Customer Group": "Hooli Industries", "Item": "Nitrile O-Ring 20x2mm", "Quantity": 160, "Delivery Deadline": "2026-02-14", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1006", "Customer Group": "Vandelay Imports", "Item": "Brass Hex Nut M8", "Quantity": 95, "Delivery Deadline": "2026-02-15", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1007", "Customer Group": "Stark Enterprises", "Item": "Galvanized Steel Pipe 1/2", "Quantity": 220, "Delivery Deadline": "2026-02-16", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1008", "Customer Group": "Wayne Tech", "Item": "Acrylic Sheet Clear 3mm 4x8", "Quantity": 70, "Delivery Deadline": "2026-02-17", "Priority": "Low", "Status": "" },
-  { "OrderID": "SO-1009", "Customer Group": "Wonka Foods", "Item": "Food-Grade Stainless Sheet 1.2mm", "Quantity": 140, "Delivery Deadline": "2026-02-18", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1010", "Customer Group": "Soylent Corp", "Item": "Polycarbonate Granules (Transparent)", "Quantity": 110, "Delivery Deadline": "2026-02-19", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1011", "Customer Group": "Acme Manufacturing", "Item": "Aluminum Angle 25x25x3mm", "Quantity": 60, "Delivery Deadline": "2026-02-20", "Priority": "Low", "Status": "" },
-  { "OrderID": "SO-1012", "Customer Group": "Globex Corp", "Item": "Stainless Steel Washer M6", "Quantity": 180, "Delivery Deadline": "2026-02-21", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1013", "Customer Group": "Innotech", "Item": "Rubber Gasket Sheet 2mm", "Quantity": 75, "Delivery Deadline": "2026-02-22", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1014", "Customer Group": "Umbrella Ltd", "Item": "Cold Rolled Steel Coil 0.8mm", "Quantity": 130, "Delivery Deadline": "2026-02-23", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1015", "Customer Group": "Hooli Industries", "Item": "PTFE Rod 10mm", "Quantity": 90, "Delivery Deadline": "2026-02-24", "Priority": "Low", "Status": "" },
-  { "OrderID": "SO-1016", "Customer Group": "Vandelay Imports", "Item": "Brass Flat Bar 10x3mm", "Quantity": 210, "Delivery Deadline": "2026-02-25", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1017", "Customer Group": "Stark Enterprises", "Item": "Mild Steel Round Bar 12mm", "Quantity": 85, "Delivery Deadline": "2026-02-26", "Priority": "High", "Status": "" },
-  { "OrderID": "SO-1018", "Customer Group": "Wayne Tech", "Item": "Stainless Steel Tube 25x1.5mm", "Quantity": 155, "Delivery Deadline": "2026-02-27", "Priority": "Medium", "Status": "" },
-  { "OrderID": "SO-1019", "Customer Group": "Wonka Foods", "Item": "Food-Grade Silicone Tube 8mm", "Quantity": 100, "Delivery Deadline": "2026-02-28", "Priority": "Low", "Status": "" },
-  { "OrderID": "SO-1020", "Customer Group": "Soylent Corp", "Item": "HDPE Granules (Natural)", "Quantity": 240, "Delivery Deadline": "2026-03-01", "Priority": "High", "Status": "" }
-]
+export const demandData = [
+  { "ORDER ID": "", "CUSTOMER GROUP": "Acme Manufacturing", "ITEM": "Stainless Steel Bolt M6 x 20mm", "QUANTITY": 300, "Delivery DEADLINE": "=Today()+1", "PRIORITY": "High", "STATUS": "" },   // past week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Globex Corp", "ITEM": "Aluminum Sheet 2mm 4x8", "QUANTITY": 180, "Delivery DEADLINE": "=Today()+2", "PRIORITY": "Medium", "STATUS": "" },            // past week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Innotech", "ITEM": "Copper Wire Spool", "QUANTITY": 350, "Delivery DEADLINE": "=Today()+3", "PRIORITY": "High", "STATUS": "" },               // past week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Umbrella Ltd", "ITEM": "ABS Plastic Granules (Natural)", "QUANTITY": 600, "Delivery DEADLINE": "=Today()-3", "PRIORITY": "Low", "STATUS": "" },   // current day
+  { "ORDER ID": "", "CUSTOMER GROUP": "Hooli Industries", "ITEM": "Nitrile O-Ring 20x2mm", "QUANTITY": 260, "Delivery DEADLINE": "=Today()+4", "PRIORITY": "Medium", "STATUS": "" },     // current week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Vandelay Imports", "ITEM": "Brass Hex Nut M8", "QUANTITY": 95, "Delivery DEADLINE": "=Today()+5", "PRIORITY": "High", "STATUS": "" },             // current week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Stark Enterprises", "ITEM": "Galvanized Steel Pipe 1/2", "QUANTITY": 220, "Delivery DEADLINE": "=Today()+6", "PRIORITY": "Medium", "STATUS": "" }, // current week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Wayne Tech", "ITEM": "Acrylic Sheet Clear 3mm 4x8", "QUANTITY": 70, "Delivery DEADLINE": "=Today()-3", "PRIORITY": "Low", "STATUS": "" },         // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Wonka Foods", "ITEM": "Food-Grade Stainless Sheet", "QUANTITY": 140, "Delivery DEADLINE": "=Today()+1", "PRIORITY": "High", "STATUS": "" },  // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Soylent Corp", "ITEM": "Polycarbonate Granules (Transparent)", "QUANTITY": 510, "Delivery DEADLINE": "=Today()+5", "PRIORITY": "Medium", "STATUS": "" }, // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Acme Manufacturing", "ITEM": "Aluminum Angle 25x25x3mm", "QUANTITY": 60, "Delivery DEADLINE": "=Today()+3", "PRIORITY": "Low", "STATUS": "" },   // past week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Globex Corp", "ITEM": "Stainless Steel Washer M6", "QUANTITY": 480, "Delivery DEADLINE": "=Today()-1", "PRIORITY": "High", "STATUS": "" },     // current week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Innotech", "ITEM": "Rubber Gasket Sheet 2mm", "QUANTITY": 75, "Delivery DEADLINE": "=Today()+2", "PRIORITY": "Medium", "STATUS": "" },         // current week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Umbrella Ltd", "ITEM": "Cold Rolled Steel Coil", "QUANTITY": 130, "Delivery DEADLINE": "=Today()+3", "PRIORITY": "High", "STATUS": "" },   // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Hooli Industries", "ITEM": "PTFE Rod 10mm", "QUANTITY": 490, "Delivery DEADLINE": "=Today()+7", "PRIORITY": "Low", "STATUS": "" },            // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Vandelay Imports", "ITEM": "Brass Flat Bar 10x3mm", "QUANTITY": 470, "Delivery DEADLINE": "=Today()+6", "PRIORITY": "Medium", "STATUS": "" },  // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Stark Enterprises", "ITEM": "Mild Steel Round Bar 12mm", "QUANTITY": 85, "Delivery DEADLINE": "=Today()+2", "PRIORITY": "High", "STATUS": "" }, // past week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Wayne Tech", "ITEM": "Stainless Steel Tube", "QUANTITY": 755, "Delivery DEADLINE": "=Today()+5", "PRIORITY": "Medium", "STATUS": "" }, // current week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Wonka Foods", "ITEM": "Food-Grade Silicone Tube 8mm", "QUANTITY": 800, "Delivery DEADLINE": "=Today()+3", "PRIORITY": "Low", "STATUS": "" },    // future week
+  { "ORDER ID": "", "CUSTOMER GROUP": "Soylent Corp", "ITEM": "HDPE Granules (Natural)", "QUANTITY": 240, "Delivery DEADLINE": "=Today()+1", "PRIORITY": "High", "STATUS": "" },    // future week
+];
 
-export const liveMaterial =
-[
-  { "Item": "Stainless Steel Bolt M6 x 20mm",        "Available Quantity": 300, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Aluminum Sheet 2mm 4x8",                "Available Quantity": 180, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Copper Wire 1.5mm Spool",               "Available Quantity": 500, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "ABS Plastic Granules (Natural)",        "Available Quantity": 150, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Nitrile O-Ring 20x2mm",                 "Available Quantity": 260, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Brass Hex Nut M8",                      "Available Quantity": 90,  "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Galvanized Steel Pipe 1/2",           "Available Quantity": 350, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Acrylic Sheet Clear 3mm 4x8",           "Available Quantity": 200, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Food-Grade Stainless Sheet 1.2mm",      "Available Quantity": 400, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Polycarbonate Granules (Transparent)",  "Available Quantity": 140, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Aluminum Angle 25x25x3mm",              "Available Quantity": 220, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Stainless Steel Washer M6",             "Available Quantity": 180, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Rubber Gasket Sheet 2mm",               "Available Quantity": 120, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Cold Rolled Steel Coil 0.8mm",          "Available Quantity": 280, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "PTFE Rod 10mm",                         "Available Quantity": 95,  "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Brass Flat Bar 10x3mm",                 "Available Quantity": 210, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Mild Steel Round Bar 12mm",             "Available Quantity": 175, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Stainless Steel Tube 25x1.5mm",         "Available Quantity": 150, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "Food-Grade Silicone Tube 8mm",          "Available Quantity": 90,  "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" },
-  { "Item": "HDPE Granules (Natural)",               "Available Quantity": 260, "Customer Required": "", "Shortage Quantity": "", "Restock Quantity": "", "ExpectedDate": "", "Risk": "" }
-]
-
-export const liveSchedule =
-[
-  { "jobID": "JOB-001", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-002", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-003", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-004", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-005", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-006", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-007", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-008", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-009", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-010", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-011", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-012", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-013", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-014", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-015", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-016", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-017", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-018", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-019", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" },
-  { "jobID": "JOB-020", "OrderID": "", "Item": "", "Quantity": "", "Delivery Deadline": "", "Material Available": "", "Planned Start": "", "Planned End": "", "Schedule Status": "" }
-]
+export const materialData = [
+  { "ITEM": "Stainless Steel Bolt M6 x 20mm",        "AVAILABLE QUANTITY": 500, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "40", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Aluminum Sheet 2mm 4x8",                "AVAILABLE QUANTITY": 250, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "50", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Copper Wire Spool",               "AVAILABLE QUANTITY": 500, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "30", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "ABS Plastic Granules (Natural)",        "AVAILABLE QUANTITY": 150, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "60", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Nitrile O-Ring 20x2mm",                 "AVAILABLE QUANTITY": 460, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "30", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Brass Hex Nut M8",                      "AVAILABLE QUANTITY": 90,  "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "70", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Galvanized Steel Pipe 1/2",             "AVAILABLE QUANTITY": 350, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "10", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Acrylic Sheet Clear 3mm 4x8",           "AVAILABLE QUANTITY": 200, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "20", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Food-Grade Stainless Sheet",      "AVAILABLE QUANTITY": 400, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "30", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Polycarbonate Granules (Transparent)",  "AVAILABLE QUANTITY": 140, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "40", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Aluminum Angle 25x25x3mm",              "AVAILABLE QUANTITY": 220, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "50", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Stainless Steel Washer M6",             "AVAILABLE QUANTITY": 180, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "60", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Rubber Gasket Sheet 2mm",               "AVAILABLE QUANTITY": 120, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "20", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Cold Rolled Steel Coil",          "AVAILABLE QUANTITY": 280, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "40", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "PTFE Rod 10mm",                         "AVAILABLE QUANTITY": 95,  "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "30", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Brass Flat Bar 10x3mm",                 "AVAILABLE QUANTITY": 210, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "70", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Mild Steel Round Bar 12mm",             "AVAILABLE QUANTITY": 175, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "60", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Stainless Steel Tube",         "AVAILABLE QUANTITY": 150, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "50", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "Food-Grade Silicone Tube 8mm",          "AVAILABLE QUANTITY": 90,  "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "30", "MATERIAL AVAILABILITY DATE": "", "RISK": "" },
+  { "ITEM": "HDPE Granules (Natural)",               "AVAILABLE QUANTITY": 260, "CUSTOMER REQUIRED": "", "SHORTAGE QUANTITY": "", "ALWAYS INSTOCK": "20", "MATERIAL AVAILABILITY DATE": "", "RISK": "" }
+];
