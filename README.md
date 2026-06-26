@@ -1,6 +1,6 @@
 # Syncfusion React Spreadsheet – Production Planning and Scheduling Demo
 
-This repository contains a complete showcase sample demonstrating how to build a **Production Planning and Scheduling** workflow using the **Syncfusion React Spreadsheet** component. The sample illustrates how manufacturing teams can plan orders, track material shortages, manage schedules, and calculate delivery timelines within an interactive spreadsheet interface.
+This repository contains a complete showcase sample demonstrating how to build a **Production Planning and Scheduling** workflow using the [React Spreadsheet](https://www.syncfusion.com/spreadsheet-editor-sdk/react-spreadsheet-editor) component. The sample illustrates how manufacturing teams can plan orders, track material shortages, manage schedules, and calculate delivery timelines within an interactive spreadsheet interface.
 
 
 ## 📁 Project Structure
@@ -22,12 +22,12 @@ This repository contains a complete showcase sample demonstrating how to build a
 - Use conditional formatting to highlight delays, risks, and shortage conditions.
 - Apply data validation for  quantities and selectable fields.
 - Utilize spreadsheet interactivity: Data editing, cell and conditional formatting ,applying formulas to analyze data in the spreadsheet and more.
-- Demonstrates how Syncfusion Spreadsheet can function as a lightweight production planner in User Interface.
+- Demonstrates how Spreadsheet can function as a lightweight production planner in User Interface.
 
 ## 🧩 Technologies Used
 
 - React
-- Syncfusion React Spreadsheet
+- React Spreadsheet
 
 ## 🚀 Getting Started
 
@@ -66,7 +66,7 @@ Your application will automatically run on a local development server and can be
 
 ## 📣 Try It Out
 
-Clone the repository, run the sample, and explore how Syncfusion React Spreadsheet can be used to build a complete **Production Planning and Scheduling** system for real manufacturing workflows.
+Clone the repository, run the sample, and explore how Syncfusion [React Spreadsheet](https://www.syncfusion.com/spreadsheet-editor-sdk/react-spreadsheet-editor) can be used to build a complete **Production Planning and Scheduling** system for real manufacturing workflows.
 
 ## 📄 License and Copyright
 
